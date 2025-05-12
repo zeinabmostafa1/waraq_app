@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:waraq/constants.dart';
 
 import 'features/splash/presentaion/views/splash_view.dart';
 
@@ -13,6 +14,8 @@ class WaraqApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData.dark().copyWith(scaffoldBackgroundColor: kPrimaryColor),
       home: SplashView(),
     );
   }
