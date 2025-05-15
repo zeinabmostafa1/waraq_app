@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:waraq/core/utils.dart';
 
 class CustomListViewItem extends StatelessWidget {
-  const CustomListViewItem({super.key});
+   const CustomListViewItem({super.key});
 
   @override
   Widget build(BuildContext context) {

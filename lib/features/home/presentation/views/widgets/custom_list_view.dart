@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:waraq/core/utils.dart';
 import 'package:waraq/features/home/presentation/views/widgets/custom_list_view_item.dart';
 
 class CustomListView extends StatelessWidget {
-  const CustomListView({super.key});
+   CustomListView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -12,8 +13,11 @@ class CustomListView extends StatelessWidget {
         itemCount: 4,
           scrollDirection: Axis.horizontal,
           itemBuilder: (context, index) {
-            return CustomListViewItem();
-          },),
+           return CustomListViewItem();
+          },
+      ),
+
     );
   }
-}
+
+  }
