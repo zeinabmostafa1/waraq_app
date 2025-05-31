@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:waraq/core/utils.dart';
+import 'package:waraq/core/utils/utils.dart';
 
 class CustomListViewItem extends StatelessWidget {
    const CustomListViewItem({super.key});
