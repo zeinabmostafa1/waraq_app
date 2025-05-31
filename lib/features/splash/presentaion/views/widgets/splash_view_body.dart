@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+import 'package:go_router/go_router.dart';
 import 'package:waraq/constants.dart';
-import 'package:waraq/core/utils.dart';
+import 'package:waraq/core/utils/app_routes.dart';
+import 'package:waraq/core/utils/utils.dart';
 import 'package:waraq/features/home/presentation/views/home_view.dart';
 import 'package:waraq/features/splash/presentaion/views/widgets/sliding_text.dart';
 
@@ -56,7 +57,7 @@ class _SplashViewBodyState extends State<SplashViewBody>
 
   void navigateToHome(){
     Future.delayed(Duration(seconds: 2),() {
-      Get.to(()=> HomeView(), transition: Transition.fade, duration: kTransitionDuration);
+     GoRouter.of(context).push(AppRoutes.kHomeView);
     },);
   }
 }

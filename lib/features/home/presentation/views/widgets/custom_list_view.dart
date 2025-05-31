@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:waraq/core/utils.dart';
-import 'package:waraq/features/home/presentation/views/widgets/custom_list_view_item.dart';
+import 'package:waraq/core/utils/utils.dart';
+import 'package:waraq/features/home/presentation/views/widgets/custom_book_image.dart';
 
 class CustomListView extends StatelessWidget {
    CustomListView({super.key});
@@ -13,7 +13,7 @@ class CustomListView extends StatelessWidget {
         itemCount: 4,
           scrollDirection: Axis.horizontal,
           itemBuilder: (context, index) {
-           return CustomListViewItem();
+           return CustomBookImage();
           },
       ),
 

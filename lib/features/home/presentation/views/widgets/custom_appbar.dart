@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:waraq/core/utils.dart';
+import 'package:waraq/core/utils/utils.dart';
 
 class CustomAppbar extends StatelessWidget {
   const CustomAppbar({super.key});
