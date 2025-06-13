@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:waraq/core/utils/font_styles.dart';
+import 'package:waraq/features/home/presentation/views/widgets/bookRating.dart';
 import 'package:waraq/features/home/presentation/views/widgets/custom_book_details_appbar.dart';
 import 'package:waraq/features/home/presentation/views/widgets/custom_book_image.dart';
 
@@ -23,6 +24,8 @@ class BookDetailsViewBody extends StatelessWidget {
           Text('white Afair Book', style: FontStyles.textStyle30.copyWith(fontFamily: 'Ancizar Serif'),),
           SizedBox(height: 6,),
           Text('J.k Rowling', style: FontStyles.textStyle18.copyWith(color: Colors.grey ,fontStyle: FontStyle.italic),),
+          const SizedBox(height: 18,),
+          BookRating(mainAxisAlignment: MainAxisAlignment.center,),
 
         ],
       ),

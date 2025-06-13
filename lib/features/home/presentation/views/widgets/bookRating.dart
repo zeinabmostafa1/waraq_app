@@ -2,11 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:waraq/core/utils/font_styles.dart';
 
 class BookRating extends StatelessWidget {
-  const BookRating({super.key});
+   BookRating({super.key, this.mainAxisAlignment = MainAxisAlignment.start});
+  final MainAxisAlignment mainAxisAlignment;
 
   @override
   Widget build(BuildContext context) {
     return Row(
+    mainAxisAlignment: mainAxisAlignment,
       children: [
         Icon(Icons.star_rate_rounded, color: Colors.amber,),
         SizedBox(width: 6.3,),
