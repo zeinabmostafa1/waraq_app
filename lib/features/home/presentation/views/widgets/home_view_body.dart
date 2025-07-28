@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:waraq/core/utils/font_styles.dart';
 import 'package:waraq/features/home/presentation/views/widgets/best_seller_list_view_item.dart';
-import 'package:waraq/features/home/presentation/views/widgets/best_seller_listview.dart';
+import 'package:waraq/features/home/presentation/views/widgets/books_listview.dart';
 import 'package:waraq/features/home/presentation/views/widgets/custom_appbar.dart';
 import 'package:waraq/features/home/presentation/views/widgets/custom_list_view.dart';
 
@@ -33,7 +33,7 @@ class HomeViewBody extends StatelessWidget {
         SliverToBoxAdapter(
           child: Padding(
             padding: EdgeInsets.symmetric(horizontal: 20),
-            child: BestSellerListview(),
+            child: BooksListview(),
           ),
         )
       ],
