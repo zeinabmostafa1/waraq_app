@@ -3,7 +3,7 @@ import 'package:waraq/core/utils/font_styles.dart';
 import 'package:waraq/features/home/presentation/views/widgets/best_seller_list_view_item.dart';
 import 'package:waraq/features/home/presentation/views/widgets/books_listview.dart';
 import 'package:waraq/features/home/presentation/views/widgets/custom_appbar.dart';
-import 'package:waraq/features/home/presentation/views/widgets/custom_list_view.dart';
+import 'package:waraq/features/home/presentation/views/widgets/featured_books_ListView.dart';
 
 class HomeViewBody extends StatelessWidget {
   const HomeViewBody({super.key});
@@ -20,7 +20,7 @@ class HomeViewBody extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(horizontal: 20),
                   child: CustomAppbar(),
                 ),
-                CustomListView(),
+                FeaturedBooksListView(),
                 SizedBox(height: 25,),
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 20),

@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:waraq/core/utils/utils.dart';
 import 'package:waraq/features/home/presentation/views/widgets/custom_book_image.dart';
 
-class CustomListView extends StatelessWidget {
-   CustomListView({super.key});
+class FeaturedBooksListView extends StatelessWidget {
+   FeaturedBooksListView({super.key});
 
   @override
   Widget build(BuildContext context) {
