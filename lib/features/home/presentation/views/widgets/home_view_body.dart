@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:waraq/core/utils/font_styles.dart';
-import 'package:waraq/features/home/presentation/views/widgets/best_seller_list_view_item.dart';
-import 'package:waraq/features/home/presentation/views/widgets/books_listview.dart';
+import 'package:waraq/features/home/presentation/views/widgets/book_list_view_item.dart';
+import 'package:waraq/features/home/presentation/views/widgets/best_seller_listview.dart';
 import 'package:waraq/features/home/presentation/views/widgets/custom_appbar.dart';
 import 'package:waraq/features/home/presentation/views/widgets/featured_books_ListView.dart';
 
@@ -11,6 +11,7 @@ class HomeViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CustomScrollView(
+      physics: BouncingScrollPhysics(),
       slivers: [
         SliverToBoxAdapter(
           child: Column(
@@ -33,7 +34,7 @@ class HomeViewBody extends StatelessWidget {
         SliverToBoxAdapter(
           child: Padding(
             padding: EdgeInsets.symmetric(horizontal: 20),
-            child: BooksListview(),
+            child: BestSellerListview(),
           ),
         )
       ],

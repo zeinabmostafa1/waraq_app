@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:waraq/core/utils/font_styles.dart';
-import 'package:waraq/features/home/presentation/views/widgets/books_listview.dart';
+import 'package:waraq/features/home/presentation/views/widgets/best_seller_listview.dart';
 import 'package:waraq/features/search/presentation/views/widget/custom_search_textField.dart';
 import 'package:waraq/features/search/presentation/views/widget/search_result_list_view.dart';
 

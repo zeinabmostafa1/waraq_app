@@ -24,7 +24,7 @@ class BookDetailsViewBody extends StatelessWidget {
                 CustomBookDetailsAppbar(),
                 Padding(
                   padding: EdgeInsets.symmetric(horizontal: width * 0.17),
-                  child: CustomBookImage(),
+                  child: CustomBookImage(imageUrl: 'https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630',),
                 ),
                 SizedBox(height: 43),
                 Text(
@@ -40,7 +40,7 @@ class BookDetailsViewBody extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 18),
-                BookRating(mainAxisAlignment: MainAxisAlignment.center),
+                BookRating(mainAxisAlignment: MainAxisAlignment.center, rating: 8, count: 50,),
                 const SizedBox(height: 37),
                 BooksAction(),
                 Expanded(child: SizedBox(height: 50)),
@@ -61,48 +61,6 @@ class BookDetailsViewBody extends StatelessWidget {
           ),
         )
       ],
-    );
-
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 30),
-      child: Column(
-        children: [
-          CustomBookDetailsAppbar(),
-          Padding(
-            padding: EdgeInsets.symmetric(horizontal: width * 0.17),
-            child: CustomBookImage(),
-          ),
-          SizedBox(height: 43),
-          Text(
-            'white Afair Book',
-            style: FontStyles.textStyle30.copyWith(fontFamily: 'Ancizar Serif'),
-          ),
-          SizedBox(height: 6),
-          Text(
-            'J.k Rowling',
-            style: FontStyles.textStyle18.copyWith(
-              color: Colors.grey,
-              fontStyle: FontStyle.italic,
-            ),
-          ),
-          const SizedBox(height: 18),
-          BookRating(mainAxisAlignment: MainAxisAlignment.center),
-          const SizedBox(height: 37),
-          BooksAction(),
-          Expanded(child: SizedBox(height: 50)),
-          Align(
-            alignment: Alignment.centerLeft,
-            child: Text(
-              'You can also like',
-              style: FontStyles.textStyle14.copyWith(
-                fontWeight: FontWeight.w600,
-              ),
-            ),
-          ),
-          const SizedBox(height: 15),
-          SimilarBooksListview()
-        ],
-      ),
     );
   }
 }
